@@ -1,15 +1,25 @@
 {
   "name": "@hexlet/code",
-  "version": "1.0.0",
-  "description": "Chat",
+  "version": "0.0.1",
+  "description": "Chat (Slack)",
   "main": "index.js",
   "scripts": {
+    "build": "npm run build --prefix frontend",
     "start": "npx start-server -s ./frontend/build",
-    "build": "npm run build --prefix frontend"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd frontend && npm ci"
   },
-  "author": "ilyaRozhkov",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpaYkeR696/frontend-project-12.git"
+  },
+  "author": "Nikita Meschariakov",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpaYkeR696/frontend-project-12/issues"
+  },
+  "homepage": "https://github.com/SpaYkeR696/frontend-project-12#readme",
   "dependencies": {
-    "@hexlet/chat-server": "^2.0.3"
+    "@hexlet/chat-server": "^1.1.9"
   }
 }
