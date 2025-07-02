@@ -1,19 +1,12 @@
+start-frontend:
+	cd frontend && npm run dev
+start-backend:
+	npm start
 install:
 	npm ci
 	cd frontend && npm ci
-
 build:
 	rm -rf frontend/build
-	cd frontend && npm run build
-
-start-frontend:
-	cd frontend && npm run dev
-
-start-backend:
-	npx start-server
-
+	npm run build
 start:
 	make start-backend & make start-frontend
-
-lint:
-	cd frontend && npx eslint .
