@@ -4,7 +4,7 @@ install:
 
 build:
 	rm -rf frontend/build
-	npm run build
+	cd frontend && npm run build
 
 start-frontend:
 	cd frontend && npm run dev
