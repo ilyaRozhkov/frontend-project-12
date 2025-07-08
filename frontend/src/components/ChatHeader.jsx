@@ -12,13 +12,13 @@ const ChatHeader = () => {
   const countMessages = useSelector(
     state => state.messagesReducer.messages,
   ).filter(message => message.channelId === activeId).length
-
+  console.log('activeTitle',activeTitle)
   return (
     <div className="bg-light p-3 shadow-sm small">
       <p className="m-0">
         <b>
           #
-          {activeTitle.name}
+          {activeTitle?.name}
         </b>
       </p>
       <span className="text-muted">
