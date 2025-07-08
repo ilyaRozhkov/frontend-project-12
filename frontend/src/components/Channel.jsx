@@ -27,15 +27,15 @@ const Channel = ({ channel }) => {
     <div className="d-flex btn-group ">
       <Button
         onClick={handleClick}
-        name={channel.name}
-        aria-label={channel.name}
+        name={channel?.name}
+        aria-label={channel?.name}
         type="button"
         className={`${classBtn} text-truncate `}
       >
         <span className="me-1">
           #
         </span>
-        {channel.name}
+        {channel?.name}
       </Button>
       {channel.removable === true && (
         <Menu className={classToggle} channel={channel} />

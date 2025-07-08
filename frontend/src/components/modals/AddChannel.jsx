@@ -17,7 +17,7 @@ const Add = ({ onClose }) => {
 
   const { t } = useTranslation()
   const dispatch = useDispatch()
-  const names = channels.map(channel => channel.name)
+  const names = channels.map(channel => channel?.name)
   const validationSchema = getChannelValidation(t, names)
   const inputEl = useRef(null)
   useEffect(() => {
@@ -34,8 +34,8 @@ const Add = ({ onClose }) => {
   }
 
   const getSubmit = async (values) => {
-    const newChannel = { name: profanityFilter.clean(values.name) }
-    console.log('NEWCHANNEL', newChannel.name)
+    const newChannel = { name: profanityFilter.clean(values?.name) }
+    console.log('NEWCHANNEL', newChannel?.name)
     try {
       const response = await axios.post(routes.channelsPath(), newChannel, {
         headers: getAuthHeader(),
@@ -60,7 +60,7 @@ const Add = ({ onClose }) => {
     onSubmit: getSubmit,
   })
 
-  const isSubmitDisabled = formik.values.name.trim() === ''
+  const isSubmitDisabled = formik.values?.name.trim() === ''
   console.log(isSubmitDisabled)
   console.log(formik.errors)
   return (
