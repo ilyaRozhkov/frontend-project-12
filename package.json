@@ -1,0 +1,22 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "4 project",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0",
+    "lint": "eslint .",
+    "build": "cd frontend && npm run build",
+    "dev": "cd frontend && npm run dev"
+  },
+  "author": "Tanya",
+  "license": "ISC",
+  "dependencies": {
+    "@hexlet/chat-server": "^2.0.4",
+    "socket.io": "^4.8.1"
+  }
+}

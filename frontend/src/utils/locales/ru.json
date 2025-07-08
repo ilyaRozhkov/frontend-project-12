@@ -1,0 +1,63 @@
+{
+  "translation": {
+    "validation": {
+      "requiredField": "Поле не должно быть пустым",
+      "nameLength": "От 3 до 20 символов",
+      "password": "Не менее 6 символов",
+      "repeatPassword": "Пароли должны совпадать",
+      "withoutDoubles": "Такой пользователь уже существует",
+      "auth": "Неверные имя пользователя или пароль"
+    },
+    "network": "Ошибка соединения",
+    "reload": "Обновить страницу",
+    "interface_texts": {
+      "headerBtn": "Выйти",
+      "loginPageBtn": "Войти",
+      "loginPageQuestion": "Нет аккаунта?",
+      "loginPageToReg": "Регистрация",
+      "signupBtn": "Зарегистрироваться",
+      "signupTitle": "Регистрация",
+      "chatPageChannels": "Каналы",
+      "notFoundPage": "Страница не найдена",
+      "notFoundBut": "Но вы можете",
+      "notFoundLink": "перейти на главную страницу",
+      "messages": {
+        "key_zero": "{{count}} сообщений",
+        "key_one": "{{count}} сообщение",
+        "key_few": "{{count}} сообщения",
+        "key_many": "{{count}} сообщений"
+      },
+      "modals": {
+        "addChannel": "Добавить канал",
+        "renameChannel": "Переименовать канал",
+        "removeChannel": "Удалить канал",
+        "areYouSure": "Уверены?",
+        "btnDiscard": "Отменить",
+        "btnRemove": "Удалить",
+        "btnSend": "Отправить",
+        "menuRemove": "Удалить",
+        "menuRename": "Переименовать",
+        "menuManage": "Управление каналом",
+        "channelName": "Имя канала"
+      },
+      "forms": {
+        "writeMessage": "Введите сообщение...",
+        "newMessage": "Новое сообщение",
+        "sendMessage": "Отправить",
+        "username": "Ваш ник",
+        "newUsername": "Имя пользователя",
+        "password": "Пароль",
+        "repeatPassword": "Подтвердите пароль",
+        "formTitleSignup": "Регистрация",
+        "placeHolderUsername": "От 3 до 20 символов",
+        "placeHolderPassword": "Не менее 6 символов",
+        "placeHolderRepeatPassword": "Пароли должны совпадать"
+      }
+    },
+    "toastify": {
+      "addChannelSuccess": "Канал создан",
+      "renameChannelSuccess": "Канал переименован",
+      "removeChannelSuccess": "Канал удалён"
+    }
+  }
+}
