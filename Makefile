@@ -10,7 +10,7 @@ start-frontend:
 	cd frontend && npm run dev
 
 start-backend:
-	npx @hexlet/chat-server
+	npx start-server
 
 start:
 	make start-backend & make start-frontend
@@ -23,3 +23,4 @@ test:
 
 test-e2e:
 	npx playwright test
+
