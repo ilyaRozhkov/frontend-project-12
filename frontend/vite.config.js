@@ -3,14 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-    resolve: {
-    alias: {
-      'react-dom/client': 'react-dom/client'
-    }
-  },
-  optimizeDeps: {
-    include: ['react-dom/client']
-  },
   server: {
     port: 5002,
     proxy: {
