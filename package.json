@@ -1,6 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "main": "server-simple.js",
   "description": "Slack",
   "homepage": "https://github.com/GalinaBagram1987/frontend-project-12#readme",
   "bugs": {
@@ -14,8 +15,12 @@
   "author": "BagramGalina",
   "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd frontend && npm run build"
+    "dev": "npm run backend & cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "preview": "cd frontend && npm ci && npx vite --host --port ${PORT:-5002}",
+    "backend": "npx start-server --port=5001",
+    "start": "npm run preview & npm run backend",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@hexlet/chat-server": "^2.0.4",
@@ -28,7 +33,6 @@
     "node": "23.x"
   },
   "devDependencies": {
-    "@playwright/test": "^1.57.0",
     "@types/node": "^25.0.3",
     "baseline-browser-mapping": "^2.9.11",
     "concurrently": "^9.2.1",
