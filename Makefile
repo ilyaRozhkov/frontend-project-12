@@ -2,7 +2,7 @@ lint-frontend:
 	make -C frontend lint
 
 install:
-	npm ci cd frontend && npm ci
+	npm ci && cd frontend && npm ci
 
 start-frontend:
 	make -C frontend start
@@ -22,3 +22,4 @@ build:
 gitHubActionsBage:
 
 	[![hexlet-check](https://github.com/GalinaBagram1987/frontend-project-12/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/GalinaBagram1987/frontend-project-12/actions/workflows/hexlet-check.yml)
+
